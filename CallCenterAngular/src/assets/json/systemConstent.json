@@ -1,0 +1,6 @@
+{
+  "apiUri": "http://iistest-1.mdevelop.com/training/callcenter/Api",
+  "loginUrl": "/Login",
+  "decryptUrl": "/Decrypt",
+  "customerSearchUrl": "/GetStBasic"
+}

@@ -1,0 +1,72 @@
+<div class="container">
+  <layout-menu></layout-menu>
+  <div class="wrapper">
+    <!--header小網-->
+    <div class="header mobile">
+      <button type="button" id="toggleMenu" class="toggle_menu"></button>
+      <div class="logo"></div>
+      <div class="user_set">
+        <div class="btn_logout"><a href="#"></a></div>
+        <div class="user tR">
+          <div class="pic"><img src="images/user_pic.jpg" alt="" /></div>
+        </div>
+      </div>
+    </div>
+    <div class="pagesize">
+      <div class="top_area">
+        <div class="speaker">
+          <ul class="clearfix">
+            <li>
+              <a href="#"
+                >(1)50字馬燈這裡有50字馬燈燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑50字馬燈</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >(2)50字馬燈這裡有50字馬燈燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑50字馬燈</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >(3)系統將於 2021/10/15 18:00
+                進行維護，請同仁預留作業時間，並妥善存檔備份。</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >(4)系統將於 2021/10/15 18:00
+                進行維護，請同仁預留作業時間，並妥善存檔備份。</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="user_set">
+          <div class="btn_logout" (click)="logout()"><a href="#"></a></div>
+          <div class="user tR">
+            <P>{{ user.name }}</P>
+            <P class="status" (mouseover)="mouseIn()" (mouseout)="mouseOut()">{{
+              user.role
+            }}</P>
+            <div class="pic">
+              <img src="/src/assets/images/user_pic.jpg" alt="" />
+            </div>
+          </div>
+          <div class="status_more" *ngIf="moreRoleShow">{{ user.aid }}</div>
+        </div>
+      </div>
+      <div class="route">
+        <ul>
+          <li><a href="#"></a></li>
+          <li>{{ mainRoute }}</li>
+          <li *ngif="subRoute">{{ subRoute }}</li>
+          <li *ngif="bottomRoute">{{ bottomRoute }}</li>
+        </ul>
+      </div>
+      <!--body-->
+      <div>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
+<!--JS_側選單-->

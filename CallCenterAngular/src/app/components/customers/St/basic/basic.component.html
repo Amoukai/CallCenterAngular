@@ -1,0 +1,304 @@
+<div class="board">
+  <ul class="menu_org">
+    <li class="on"><a href="#"></a>證券</li>
+    <li><a href="#"></a>期貨</li>
+    <li><a href="#"></a>複委託</li>
+    <li class="disable"><a href="#"></a>財富管理</li>
+    <li class="disable"><a href="#"></a>集保基金</li>
+    <li><a href="#"></a>客服紀錄</li>
+  </ul>
+  <div class="client_area">
+    <div class="client_area_top">
+      <div>
+        <div class="input_tt">證券帳號</div>
+        <div>
+          <select>
+            <option>請選擇</option>
+            <option>帳號1</option>
+            <option>帳號2</option>
+            <option>帳號3</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <ul class="input_array">
+          <li class="company">
+            <div class="input_set">
+              <div class="input_tt">分公司</div>
+              <div>敦南 理三科 02-41012345</div>
+            </div>
+          </li>
+          <li class="tel">
+            <div class="input_set">
+              <div class="input_tt">電話</div>
+              <div>02-2377-8355(速:777)</div>
+            </div>
+          </li>
+          <li class="location">
+            <div class="input_set">
+              <div class="input_tt">地址</div>
+              <div>B1</div>
+            </div>
+          </li>
+          <li class="people">
+            <div class="input_set">
+              <div class="input_tt">營業員</div>
+              <div>陳一一 小姐</div>
+            </div>
+          </li>
+          <li class="people">
+            <div class="input_set">
+              <div class="input_tt">理專</div>
+              <div>陳一一 小姐</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <ul class="menu_red">
+      <li class="on"><a href="#"></a>證券基本資料</li>
+      <li><a href="#"></a>風險預告書簽署</li>
+      <li><a href="#"></a>信用戶</li>
+      <li><a href="#"></a>手續費 / 淨收付</li>
+    </ul>
+    <div class="personal_tt">{{ basicData.sName }} {{ basicData.sIdno }}</div>
+    <ul class="info_array">
+      <li>
+        <div class="info_tt">凍結原因</div>
+        <div>{{ basicData.freezeReason }}</div>
+      </li>
+      <li>
+        <div class="info_tt">銷戶日</div>
+        <div>-</div>
+      </li>
+      <li class="full gray">
+        <div class="info_tt">出生年月日</div>
+        <div>{{ basicData.birthday }}</div>
+      </li>
+      <li class="full">
+        <div class="info_tt">通訊地址</div>
+        <div>{{ basicData.zipBirth }} {{ basicData.addrBirth }}</div>
+      </li>
+      <li class="full gray">
+        <div class="info_tt">戶籍地址</div>
+        <div>{{ basicData.zipCont }} {{ basicData.addrCont }}</div>
+      </li>
+      <li>
+        <div class="info_tt">住宅電話</div>
+        <div>{{ basicData.investorTel1 }}</div>
+      </li>
+      <li>
+        <div class="info_tt">行動電話</div>
+        <div>{{ basicData.zipCont }}</div>
+      </li>
+      <li class="gray">
+        <div class="info_tt">其他電話</div>
+        <div>-</div>
+      </li>
+      <li class="gray">
+        <div class="info_tt">傳真電話</div>
+        <div>-</div>
+      </li>
+      <li class="full">
+        <div class="info_tt">電子信箱</div>
+        <div>{{ basicData.zipCont }}</div>
+      </li>
+      <li class="gray">
+        <div class="info_tt">公司電話(一)</div>
+        <div>{{ basicData.officeTel1 }}</div>
+      </li>
+      <li class="gray">
+        <div class="info_tt">公司電話(二)</div>
+        <div>-</div>
+      </li>
+      <li>
+        <div class="info_tt">交割銀行/帳號</div>
+        <div>{{ basicData.nbankName }} {{ basicData.nbankAcctNo }}</div>
+      </li>
+      <li>
+        <div class="info_tt">MMA帳號</div>
+        <div>{{ basicData.mmaAcctNo }}</div>
+      </li>
+      <li class="gray">
+        <div class="info_tt">聯絡人/電話</div>
+        <div>{{ basicData.tel21 }}</div>
+      </li>
+      <li class="gray">
+        <div class="info_tt">銀行外幣帳號</div>
+        <div>{{ basicData.zipCont }}</div>
+      </li>
+      <li>
+        <div class="info_tt">職業別</div>
+        <div></div>
+      </li>
+      <li>
+        <div class="info_tt">服務機構</div>
+        <div>{{ basicData.companyName }}</div>
+      </li>
+    </ul>
+    <div class="title_box">
+      <h2 class="title">帳戶資訊</h2>
+    </div>
+    <ul class="info_array">
+      <li>
+        <div class="info_tt">開戶日期</div>
+        <div></div>
+      </li>
+      <li>
+        <div class="info_tt">開戶來源</div>
+        <div>-</div>
+      </li>
+      <li class="gray">
+        <div class="info_tt">網路開戶日</div>
+        <div></div>
+      </li>
+      <li class="gray">
+        <div class="info_tt">語音開戶日</div>
+        <div></div>
+      </li>
+      <li>
+        <div class="info_tt">年度累積金額(萬元)</div>
+        <div></div>
+      </li>
+      <li>
+        <div class="info_tt">帳戶交易狀態</div>
+        <div></div>
+      </li>
+      <li class="gray">
+        <div class="info_tt">對帳單郵寄方式</div>
+        <div></div>
+      </li>
+      <li class="gray">
+        <div class="info_tt">電子對帳單申請</div>
+        <div>-</div>
+      </li>
+      <li>
+        <div class="info_tt">交易限額</div>
+        <div></div>
+      </li>
+      <li>
+        <div class="info_tt">電子投資額度</div>
+        <div></div>
+      </li>
+      <li class="gray">
+        <div class="info_tt">是否符合現股當沖</div>
+        <div></div>
+      </li>
+      <li class="gray">
+        <div class="info_tt">現股當沖額度</div>
+        <div></div>
+      </li>
+      <li>
+        <div class="info_tt">債券帳號</div>
+        <div></div>
+      </li>
+      <li>
+        <div class="info_tt">銀行淨收付一筆</div>
+        <div>-</div>
+      </li>
+      <li class="gray">
+        <div class="info_tt">圈存額度</div>
+        <div></div>
+      </li>
+      <li class="gray">
+        <div class="info_tt">委託款圈存</div>
+        <div>-</div>
+      </li>
+      <li>
+        <div class="info_tt">圈存截止</div>
+        <div>-</div>
+      </li>
+      <li>
+        <div class="info_tt">圈存起始</div>
+        <div>-</div>
+      </li>
+      <li class="gray">
+        <div class="info_tt">手機存摺申請日</div>
+        <div></div>
+      </li>
+      <li class="gray">
+        <div class="info_tt">分公司維護日期</div>
+        <div></div>
+      </li>
+      <li>
+        <div class="info_tt">手機存摺開通日</div>
+        <div></div>
+      </li>
+      <li>
+        <div class="info_tt">手機存摺註銷日</div>
+        <div>-</div>
+      </li>
+      <li class="gray">
+        <div class="info_tt">集保市值</div>
+        <div></div>
+      </li>
+      <li class="gray">
+        <div class="info_tt">最後交易日</div>
+        <div></div>
+      </li>
+    </ul>
+    <div class="title_box">
+      <h2 class="title">法定代理人資料</h2>
+    </div>
+    <div class="part">
+      <div class="tab_area mCustomScrollbar">
+        <table
+          width="100%"
+          cellspacing="0"
+          cellpadding="0"
+          border="0"
+          class="ty1"
+        >
+          <tr>
+            <th>姓名</th>
+            <th class="w200">ID</th>
+            <th class="w160">出生年月日</th>
+          </tr>
+          <tr>
+            <td class="tC"></td>
+            <td class="tC"></td>
+            <td class="tC"></td>
+          </tr>
+          <tr>
+            <td class="tC"></td>
+            <td class="tC"></td>
+            <td class="tC"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="title_box">
+      <h2 class="title"></h2>
+    </div>
+    <div class="part">
+      <div class="tab_area mCustomScrollbar">
+        <table
+          width="100%"
+          cellspacing="0"
+          cellpadding="0"
+          border="0"
+          class="ty1"
+        >
+          <tr>
+            <th>姓名</th>
+            <th class="w200">ID</th>
+            <th class="w160">出生年月日</th>
+            <th class="w160">註銷日</th>
+          </tr>
+          <tr>
+            <td class="tC"></td>
+            <td class="tC"></td>
+            <td class="tC"></td>
+            <td class="tC"></td>
+          </tr>
+          <tr>
+            <td class="tC"></td>
+            <td class="tC"></td>
+            <td class="tC"></td>
+            <td class="tC"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

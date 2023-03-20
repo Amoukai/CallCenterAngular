@@ -1,0 +1,64 @@
+<div class="board">
+  <div class="title_box flex">
+    <h2 class="title">客戶基本資料查詢</h2>
+    <P class="key_red">查詢條件擇一必填</P>
+  </div>
+  <div class="board_in">
+    <form [formGroup]="searchForm">
+      <ul class="input_array">
+        <li>
+          <div class="input_set">
+            <div class="input_tt">身分證字號</div>
+            <div>
+              <input type="text" placeholder="請輸入" formControlName="idno" />
+            </div>
+          </div>
+          <div class="input_set">
+            <div class="input_tt">姓名</div>
+            <div>
+              <input type="text" placeholder="請輸入" formControlName="name" />
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="input_set">
+            <div class="input_tt">帳號</div>
+            <div>
+              <input type="text" placeholder="請輸入" formControlName="acno" />
+            </div>
+          </div>
+          <div class="input_set">
+            <div class="input_tt">電子信箱</div>
+            <div>
+              <input type="text" placeholder="請輸入" formControlName="email" />
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="input_set">
+            <div class="input_tt">行動電話</div>
+            <div>
+              <input
+                type="text"
+                placeholder="請輸入"
+                formControlName="phoneNumber"
+              />
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="btn_set_in">
+        <div class="btn_red on"><a type="submit" (click)="getData()"></a>查詢</div>
+        <div class="btn_red"><a href="#"></a>清除</div>
+      </div>
+    </form>
+  </div>
+</div>
+<router-outlet></router-outlet>
+<!-- <div class="board">
+  <div class="title_box flex">
+    <h2 class="title">搜尋結果</h2>
+    <p class="txt">搜尋結果共 <span class="key">0</span> 筆</p>
+  </div>
+  <div class="noData_box">查無資料</div>
+</div> -->
